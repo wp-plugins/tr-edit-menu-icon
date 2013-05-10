@@ -6,7 +6,8 @@ function tr_walker_nav_menu_start_el($item_output, $item, $depth, $args)
     $menuicon = get_post_meta($item_id ,'_trmenuicon',true);
     if(!empty($menuicon))
     {
-        $item_output='<span class="menu-icon"><img src="'.$menuicon.'" class="iconmenu"/></span>'.$item_output;
+        $icon='<span class="menu-icon"><img src="'.$menuicon.'" class="iconmenu" alt=""/></span>';
+        $item_output = preg_replace("/(\<a[^\>]*\>)/","$1{$icon}",$item_output);
     }
     return $item_output;
 }
