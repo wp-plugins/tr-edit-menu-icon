@@ -7,6 +7,8 @@ jQuery(function($){
             $('img#trmenuicon_'+id).attr('src',src);
             tb_remove();
         }
+        tb_show('upload',$(this).attr('href'));
+        return false;
     });
     $('a.add_select_icon').live('click',function(){
         var id = $(this).attr('rel');

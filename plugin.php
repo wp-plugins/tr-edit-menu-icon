@@ -3,7 +3,7 @@
 Plugin Name: Tr Edit Menu Icon
 Plugin URI: http://ngoctrinh.net/
 Description: Edit Menu Icon
-Version: 1.0.2
+Version: 1.0.3
 Author: Trinh
 Author URI: http://ngoctrinh.net/
 License: GPL2

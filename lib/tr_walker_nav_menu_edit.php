@@ -21,7 +21,7 @@ class TR_Walker_Nav_Menu_Edit extends Walker_Nav_Menu_Edit {
         <p class="description">
             <label>Icon</label>
             <img src="<?php echo $menuicon?>" id="trmenuicon_<?php echo $item_id?>" style="max-width: 50px;max-height:50px;" />
-            <a class="thickbox button uploadbutton" rel="<?php echo $item_id?>" href="media-upload.php?type=image&amp;post_id=<?php echo $post->ID ?>&amp;TB_iframe=true&amp;width=640&amp;height=376">Upload</a>
+            <a class=" button uploadbutton" rel="<?php echo $item_id?>" href="media-upload.php?type=image&amp;post_id=<?php echo $post->ID ?>&amp;TB_iframe=true&amp;width=640&amp;height=376">Upload</a>
             <?php if(count($this->list_custom)> 0):?>
             <a class="thickbox button" rel="<?php echo $item_id?>" href="admin.php?tr_act=get_list_custom_icons&id=<?php echo $item_id?>">Select</a>
             <?php endif;?>
